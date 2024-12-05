@@ -40,11 +40,15 @@ All selected scans have been checked.
 ```
 
 ## PoC
-![Nessus Queue Scan PoC](https://s7.gifyu.com/images/SJxGY.gif)
+ <img src="https://s7.gifyu.com/images/SJxGY.gif?raw=true" width="200px" height="200px"/>
 
 ## Motivation
 
-When pentesting large networks, I got tired of manually setting up scan schedules and figuring out the right timing for each scan to finish. Instead of dealing with that, I just want to create scan details by slicing the large network into smaller parts. For example, if I have 1000 IPs to scan, I’ll split it into batches of 100 IPs per scan. The tool will automatically launch each scan as soon as the previous one finishes, ensuring no overlap and a smooth process. This tool uses the Nessus Professional API to retrieve scan data and then simulates the scan launch using Selenium. Since the Nessus Professional API doesn’t support creating or launching scans, nor does it allow queuing scans to run sequentially after one finishes, I built this tool specifically for my own needs. If you find it useful, I’m really proud it could help you too!
+When pentesting large networks, I got tired of manually setting up scan schedules and figuring out the right timing for each scan to finish. Instead of dealing with that, I just want to create scan details by slicing the large network into smaller parts. 
+
+For example, if I have 1000 IPs to scan, I’ll split it into batches of 100 IPs per scan. The tool will automatically launch each scan as soon as the previous one finishes, ensuring no overlap and a smooth process. 
+
+This tool uses the Nessus Professional API to retrieve scan data and then simulates the scan launch using Selenium. Since the Nessus Professional API doesn’t support creating or launching scans, nor does it allow queuing scans to run sequentially after one finishes, I built this tool specifically for my own needs. If you find it useful, I’m really proud it could help you too!
 
 ## License
 
